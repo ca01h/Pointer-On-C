@@ -11,18 +11,18 @@
 
 6.声明如下：char ch = 'a'; char *cp = &ch;
 	表达式                左值					        右值
-	  ch            该变量的内存地址     该变量存储的数值 
-	 &ch 				         illegal 				    变量ch的值
-    cp            该变量的内存地址        变量ch的地址
-   &cp                 illegal         指向变量ch的指针的指针
-   *cp              变量ch的地址          变量ch的值
-  *cp+1                illegal           ch值的拷贝加1
-  *(cp+1)    ch后一个内存位置的地址   ch后一个内存位置中的值
-   ++cp                illegal        cp一份拷贝指向ch后一个内存
-   cp++                illegal          cp的一份拷贝指向ch
-  *++cp      ch后一个内存地址的本身   ch后一个内存地址的值
-  *cp++           变量ch的内存位置         变量ch的值
-  ++*cp                illegal          变量ch增值后的一份拷贝
+	  ch            该变量的内存地址     		  该变量存储的数值 
+	 &ch 				 illegal 				     变量ch的值
+    cp            	该变量的内存地址        		变量ch的地址
+   &cp                 illegal         			指向变量ch的指针的指针
+   *cp              变量ch的地址          			 变量ch的值
+  *cp+1                illegal          		   ch值的拷贝加1
+  *(cp+1)    	ch后一个内存位置的地址   		ch后一个内存地址的值
+   ++cp                illegal        			cp一份拷贝指向ch后一个内存
+   cp++                illegal          		  cp的一份拷贝指向ch
+  *++cp      	ch后一个内存地址的本身   		ch后一个内存地址的值
+  *cp++           变量ch的内存位置         			 变量ch的值
+  ++*cp                illegal          		变量ch增值后的一份拷贝
 PS：①后缀++操作符的优先级高于*操作符；
     ②++操作符得到的表达式结果均是操作数的一份拷贝；
     ③++操作符和*操作符的结合性都是从左到右。

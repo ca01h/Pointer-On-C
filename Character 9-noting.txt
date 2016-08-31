@@ -1,0 +1,9 @@
+1.字符串就是一串零个或者多个字符，并且以一个位模式全位0 的NUL字节结尾。
+
+2.strlen()函数返回的是一个size_t的值，它是一个无符号整型。strlen(x) >= strlen(y) 不等价于 strlen(x) - strlen(y) >=0，因为无符号数绝对不会是负数。如果把strlen的返回值强制转换成Int就可以消除这个问题。
+
+3.使用strncpy时，如果strlen(src)的值大于或等于len，那么只有len个字符复制到dst中，dst的结果将不会以NUL结尾。
+
+4.memmove函数的行为和memcpy差不多，但是，如果源和目标参数真的可能存在重叠，就应该使用memmove。
+
+5.strcpy和strcat都返回它们第一个参数的一份拷贝，就是指向目标字符数组的指针。
